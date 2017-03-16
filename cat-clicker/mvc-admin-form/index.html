@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>cat clicker</title>
+<style>
+	#list-wrapper {
+		float:left;
+		margin-right:150px;
+	}
+	#cat-details {
+		float: left;
+	}
+	.admin-section {
+		clear: both;
+	}
+	.admin-section form {
+		display: none;
+	}
+	.show form {
+		display: block
+	}
+</style>
+</head>
+
+<body>
+
+
+	<div id="cat-wrapper">
+		<div id="list-wrapper"></div>
+		<div id="cat-details">
+			<h2 id="title" class="title"></h2>
+			<img id="cat-img">
+			<div id="cat-count"></div>
+		</div>
+	</div>
+
+	<div class="admin-section">
+		<button class="admin">Admin</button>
+		<form id="admin-form">
+			<legend>Admin Section</legend>
+			<ul>
+				<li>
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="name">
+				</li>
+<!-- 				<li>
+					<label for="image">Image Location:</label>
+					<input type="text" name="image" id="image">
+				</li> -->
+				<li>
+					<label for="clicks">Clicks:</label>
+					<input type="text" name="clicks" id="clicks">
+				</li>
+			</ul>
+			<input type="submit" name="add" value="Add New Cat" />
+			<input type="submit" name="save" value="Save" />
+			<input type="submit" name="cancel" value="Cancel" />
+		</form>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
